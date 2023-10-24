@@ -1,0 +1,40 @@
+body{
+    background-color:#22212C;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+
+
+/*profile, pic and h1,p*/
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /*centralizando items dentro da box do profile*/
+    
+    width: 348px;
+    height: 292px;
+    /*tamanho da box*/
+
+    /*cor de fundo da div e efeito filter drop-shadow(horiz, vertical, cor)*/
+    background-color: #302F3D;
+    filter: drop-shadow(2px 2px #1E1E1E);
+    
+    
+    margin: 40px 40px 0;
+    border-radius: 20px;
+    /*margins em relação ao lado de fora e arredondamento das pontas*/
+    
+    
+    color: #837E9F;
+    font-weight: 400;
+}
+
+.profile img{
+    height: 128px;
+    width: 128px;
+    border-radius: 50%;
+    border:solid 2px #00FF00;
+}
+
