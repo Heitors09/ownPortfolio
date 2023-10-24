@@ -1,6 +1,7 @@
 body{
     background-color:#22212C;
     font-family: 'Merriweather Sans', sans-serif;
+    
 }
 
 
@@ -38,3 +39,47 @@ body{
     border:solid 2px #00FF00;
 }
 
+
+
+
+
+
+/*construindo container de Links e imagens svg como icones*/
+.icons{
+    /*definindo largura e comprimento da div e suas margens em relação ao lado de fora*/
+    width: 348px;
+    height: 348px;
+    margin: 30px 40px 0;
+    
+    
+    /*estilizando fundo, sombra e arredondamento das bordas*/
+    background-color: #302F3D;
+    filter: drop-shadow(2px 2px #1E1E1E);
+    border-radius: 20px;
+}
+
+
+.icons ul{
+    /*deixando os itens em coluna e dando um espaço entre eles afastando da box da parte de cima*/
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    list-style:none;
+    padding-top:50px;
+}
+
+.icons ul a{
+    text-decoration: none;
+    color: #837E9F;
+}
+
+
+.icons ul li{
+    display: flex;
+    align-items: center;
+    color: #837E9F;
+    
+}
+.icons ul li img{
+    padding-right: 20px;
+}
