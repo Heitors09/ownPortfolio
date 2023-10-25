@@ -44,6 +44,7 @@ body{
 
 
 
+
 /*construindo container de Links e imagens svg como icones*/
 .icons{
     /*definindo largura e comprimento da div e suas margens em relação ao lado de fora*/
@@ -65,13 +66,18 @@ body{
     flex-direction: column;
     gap: 29px;
     list-style:none;
-    padding-top:50px;
+    padding-top:60px;
 }
 
 .icons ul a{
     text-decoration: none;
     color: #837E9F;
 }
+.icons ul a:hover{
+    transform: translateY(-5px);
+    transition: 0.2s;
+}
+
 
 
 .icons ul li{
@@ -82,4 +88,43 @@ body{
 }
 .icons ul li img{
     padding-right: 20px;
+}
+
+.tecno{
+      width: 348px;
+      height: 208px;
+      /*definindo tamanho da box*/
+      margin: 30px 40px 0;
+      /*definindo caixa das tecnologias com margin encima(30px) laterais(40px) embaixo(0)*/
+      background-color: #302F3D;
+      filter: drop-shadow(2px 2px #1E1E1E);
+      border-radius: 20px;
+      /*cor de fundo e sombra*/  
+}
+
+.tecno p{
+    padding: 30px 20px 0;
+    font-size: larger;
+    font-weight: 400;
+    color: #837E9F;
+}
+.tecno ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0 30px 30px;
+}
+
+
+.tecno ul li{
+     font-weight: 500;
+     font-size: 12px;
+     width: 86px;
+     height: 24px;
+    /*ajustando tamanho da lista*/
+    background-color: #CB92B1;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
