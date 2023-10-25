@@ -9,9 +9,7 @@
 body{
     background-color:#22212C;
     font-family: 'Merriweather Sans', sans-serif;
-    
 }
-
 
 
 /*profile, pic and h1,p*/
@@ -151,4 +149,74 @@ body{
     justify-content: center;
     align-items: center;
 
+}
+
+.exp{
+    width: 348px;
+    height: 348px;
+    margin: 30px 40px 0;
+
+    background-color: #302F3D;
+    filter: drop-shadow(2px 2px #1E1E1E);
+    border-radius: 20px;
+}
+.exp p{
+    padding: 30px 20px 0;
+    font-size: large;
+    font-weight: 700;
+    color: #837E9F;
+}
+
+.educ{
+    width: 348px;
+    height: 348px;
+    margin: 30px 40px 0;
+
+    background-color: #302F3D;
+    filter: drop-shadow(2px 2px #1E1E1E);
+    border-radius: 20px;
+    margin-bottom: 58px;
+    
+}
+
+.educ p{
+    padding: 30px 20px 0;
+    font-size: large;
+    font-weight: 700;
+    color: #837E9F;
+}
+
+.projects{
+
+    width:952px;
+    height: 86px;
+    margin-top: 40px;
+
+    background-color: #302F3D;
+    filter: drop-shadow(2px 2px #1E1E1E);
+    border-radius: 20px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects p{
+    font-size: large;
+    font-weight: 700;
+    color: #837E9F;
+    margin-left: 30px;
+}
+
+.projects a{
+    font-weight: 300;
+    font-size: 14px;
+    text-decoration: none;
+    color: #837E9F;
+    margin-right: 34px;
+}
+
+.header{
+    display: inline-flex;
+    border: 1px solid red;
 }
