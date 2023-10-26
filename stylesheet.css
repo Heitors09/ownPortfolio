@@ -218,5 +218,60 @@ body{
 
 .header{
     display: inline-flex;
-    border: 1px solid red;
+    
+}
+
+.github{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width:952px;
+    position: absolute;
+    z-index: 1;
+    gap:23.5px;
+    left: 430px;
+    top: 157px;
+    
+    margin-top: -31px;
+}
+
+.github1{
+    width: 461px;
+    height: 186px;
+    /*define tamanho e largura da caixa */
+    /*define que ela está uma layer acima para que assim consiga se posicionar abaixo de projects
+    mesmo dentro de outro header*/
+    
+    /*estilização*/
+    background-color: #302F3D;
+    filter: drop-shadow(2px 2px #1E1E1E);
+    border-radius: 20px;
+    color: #837E9F;
+}
+
+.header .github1 h4{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.header .github1 p{
+    margin-left: 30px;
+    margin-top: 22px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.header .github1 .giticon{
+    display: flex;
+    align-items: center;
+   
+
+    margin-left: 30px;
+    margin-top: 30px;
+    
+    
+    gap: 52px;
+    font-size: 20px;
 }
