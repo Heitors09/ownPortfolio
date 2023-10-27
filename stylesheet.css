@@ -252,7 +252,8 @@ body{
     display: flex;
     align-items: center;
     gap: 16px;
-    margin-left: 30px;
+    padding-top: 20px;
+    margin-left: 66px;
     margin-top: 30px;
 }
 
@@ -261,6 +262,7 @@ body{
     margin-top: 22px;
     font-size: 14px;
     margin-right: 10px;
+    
 }
 
 .header .github1 .giticon{
@@ -274,4 +276,64 @@ body{
     
     gap: 52px;
     font-size: 20px;
+}
+
+.recentPost{
+    width: 952px;
+    height: 86px;
+
+    position: absolute;
+    z-index: 2;
+    top: 233px;
+    
+    background-color: #302F3D;
+    filter: drop-shadow(2px 2px #1E1E1E);
+    border-radius: 20px;
+    color: #837E9F;
+
+
+}
+
+.recentPost h2{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.githubrecent{
+    width: 952px;
+    height: 201px;
+
+    background-color: #302F3D;
+    filter: drop-shadow(2px 2px #1E1E1E);
+    border-radius: 20px;
+    color: #837E9F;
+
+    margin-top: 60px;
+
+}
+
+
+.githubrecent img{
+    height: 128px;
+    width: 128px;
+    border-radius: 50%;
+
+}
+
+.githubrecent h2{
+      margin-left: 178px;
+      padding-top: 30px;
+      
+}
+
+.githubrecent p{
+     margin-left: 178px;
+     padding-top: 40px;
+}
+
+.github h3{
+    margin-top: 300px;
+     color: red;
 }

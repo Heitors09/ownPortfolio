@@ -2,7 +2,7 @@ const repos = document.querySelector('.github')
 
 /*requisitando API com a função usando o fetch */
 function getAPIGithub(){
-     fetch('https://api.github.com/users/Heitors09/repos')
+     fetch('https://api.github.com/users/Heitors09/repos?per_page=2')
      //acessa API
      .then(async res=>{
         //se eu não(!) conseguir a resposta de async( se ela não for "ok")
@@ -12,6 +12,7 @@ function getAPIGithub(){
           }
           //essa condição é caso não recebe resposta da API arrow function se não for ok new error resposta status
         let data = await res.json(); 
+        console.log(data)
         //caso receba, a variavel data irá aguardar(await) a res(parametro) async da função e transformar em json()
         //nova arrow function para iterar o recebido da variavél data
         data.map(item => {
@@ -38,4 +39,34 @@ function getAPIGithub(){
 
 getAPIGithub()
 
+
+const recentUrl = 'https://api.github.com/users/Heitors09/repos?per_page=2'
+
+function getRecent(){
+     fetch(recentUrl)
+    .then(async res=>{
+           let recentreceiv = await res.json()
+           console.log(recentreceiv)
+           
+
+          recentreceiv.forEach(rec => {
+            let receive = document.createElement('div')
+
+            receive.innerHTML = `<div class="newPost">
+            <h3>${rec.name}</h3>
+            </div>
+            
+            ` 
+
+             repos.appendChild(receive)
+
+          });
+    })
+    
+   
+
+
+}
+
+getRecent();
 
