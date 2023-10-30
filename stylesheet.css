@@ -337,3 +337,44 @@ body{
     margin-top: 300px;
      color: red;
 }
+
+.getrecent{
+    position: absolute;
+    z-index: 2;
+    top: 350px;
+    
+    width: 952px;
+    height: 201px;
+
+    background-color: #302F3D;
+    filter: drop-shadow(2px 2px #1E1E1E);
+    border-radius: 20px;
+    color: #837E9F;
+}
+
+.getrecent h2{
+    margin-left: 178px;
+    margin-top: 30px;
+    
+}
+
+.getrecent p{
+    margin-left: 178px;
+    margin-top: 5px;
+    font-weight: 300;
+    
+}
+
+.getrecent footer{
+    margin-left: 178px;
+    margin-top: 28px;
+}
+
+.getrecent img{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}

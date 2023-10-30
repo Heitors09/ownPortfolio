@@ -39,34 +39,24 @@ function getAPIGithub(){
 
 getAPIGithub()
 
+async function getRecent(){
+  const response = await fetch('https://api.github.com/users/Heitors09/repos?per_page=1&sort=created')
+  const repos = await response.json()
+       
+  const repository = repos[0]
+  
+  
+  const element = document.querySelector('.getrecent')
+  
+  element.innerHTML = `
+  <img src="./assets/eu.jpg" alt="">
+  <h2>${repository.name}</h2>
+  <p> criado em: ${repository.created_at}</p>
+  <footer>${repository.description}</p>`
 
-const recentUrl = 'https://api.github.com/users/Heitors09/repos?per_page=2'
-
-function getRecent(){
-     fetch(recentUrl)
-    .then(async res=>{
-           let recentreceiv = await res.json()
-           console.log(recentreceiv)
-           
-
-          recentreceiv.forEach(rec => {
-            let receive = document.createElement('div')
-
-            receive.innerHTML = `<div class="newPost">
-            <h3>${rec.name}</h3>
-            </div>
-            
-            ` 
-
-             repos.appendChild(receive)
-
-          });
-    })
-    
-   
-
+   return repository
 
 }
 
-getRecent();
+ getRecent();
 
