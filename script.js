@@ -47,14 +47,19 @@ async function getRecent(){
   
   
   const element = document.querySelector('.getrecent')
-  
+  const date = new Date(repository.created_at).toLocaleDateString("pt-BR")
+
+
   element.innerHTML = `
   <img src="./assets/eu.jpg" alt="">
   <h2>${repository.name}</h2>
-  <p> criado em: ${repository.created_at}</p>
-  <footer>${repository.description}</p>`
+  <p> criado em: ${date}</p>
+  <footer>${repository.description}`
 
    return repository
+
+
+
 
 }
 
